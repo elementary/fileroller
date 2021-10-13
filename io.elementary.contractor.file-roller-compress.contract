@@ -3,5 +3,5 @@ Name=Compress
 Icon=add-files-to-archive
 Description=Create a compressed archive with the selected objects
 MimeType=!archive;inode/blockdevice;inode/chardevice;inode/fifo;inode/socket;
-Exec=file-roller --add %U
+Exec=flatpak run org.gnome.FileRoller --add %U
 Gettext-Domain=file-roller
