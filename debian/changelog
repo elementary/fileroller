@@ -1,5 +1,5 @@
-io.elementary.contractor.file-roller (0.1) UNRELEASED; urgency=medium
+io.elementary.fileroller (3.40.0ubuntu1) UNRELEASED; urgency=medium
 
-  * Initial release.
+  * Import upstream release
 
- -- elementary Build Team <builds@elementary.io>  Wed, 30 Sep 2020 14:22:47 +0200
+ -- Danielle Foré <danielle@elementary.io>  Wed, 13 Oct 2021 09:51:28 -0700

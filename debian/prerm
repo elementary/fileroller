@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -e
+
+flatpak remove --system --noninteractive org.gnome.FileRoller//stable || true
+
+#DEBHELPER#
+
+exit 0
