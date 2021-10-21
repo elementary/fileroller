@@ -1,14 +1,15 @@
-Source: io.elementary.contractor.file-roller
+Source: org.gnome.FileRoller
 Section: x11
 Priority: optional
-Maintainer: Corentin Noël <corentin@elementary.io>
+Maintainer: elementary, Inc. <builds@elementary.io>
 Build-Depends: debhelper-compat (= 12)
 Standards-Version: 4.1.1
-Homepage: https://github.com/elementary/file-roller-contract
+Homepage: https://github.com/elementary/fileroller
 
-Package: io.elementary.contractor.file-roller
+Package: org.gnome.FileRoller
 Architecture: all
-Depends: ${misc:Depends}, ${shlibs:Depends}, file-roller
-Enhances: file-roller
-Description: Contractor extension for File Roller
- Extends the File Roller executable with the right contractor extension.
+Depends: ${misc:Depends}, ${shlibs:Depends}, flatpak
+Breaks: file-roller, io.elementary.contractor.file-roller
+Replaces: file-roller, io.elementary.contractor.file-roller
+Description: File Roller flatpak'd for elementary OS
+ Installs Rile Roller from AppCenter and its associated Contractor extensions
