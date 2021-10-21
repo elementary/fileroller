@@ -1,4 +1,4 @@
-Source: org.gnome.FileRoller
+Source: org.gnome.fileroller
 Section: x11
 Priority: optional
 Maintainer: elementary, Inc. <builds@elementary.io>
@@ -6,7 +6,7 @@ Build-Depends: debhelper-compat (= 12)
 Standards-Version: 4.1.1
 Homepage: https://github.com/elementary/fileroller
 
-Package: org.gnome.FileRoller
+Package: org.gnome.fileroller
 Architecture: all
 Depends: ${misc:Depends}, ${shlibs:Depends}, flatpak
 Breaks: file-roller, io.elementary.contractor.file-roller
