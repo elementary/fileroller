@@ -12,6 +12,7 @@
         "--socket=wayland",
         "--filesystem=home",
         "--metadata=X-DConf=migrate-path=/org/gnome/file-roller/",
+        "--system-talk-name=org.freedesktop.Accounts",
         "--own-name=org.gnome.ArchiveManager1"
     ],
     "cleanup": [
@@ -121,6 +122,10 @@
                         "type": "gnome",
                         "name": "file-roller"
                     }
+                },
+                {
+                    "type": "patch",
+                    "path": "fr-application-prefers-color-scheme.patch"
                 }
             ]
         },
