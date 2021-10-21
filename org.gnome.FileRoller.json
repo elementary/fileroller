@@ -109,7 +109,8 @@
             "name": "file-roller",
             "buildsystem": "meson",
             "cleanup": [
-                "org.gnome.FileRoller.ArchiveManager1.service"
+                "org.gnome.FileRoller.ArchiveManager1.service",
+                "org.gnome.ArchiveManager.svg"
             ],
             "sources": [
                 {
@@ -122,6 +123,15 @@
                     }
                 }
             ]
+        },
+        {
+            "name": "customizations",
+            "buildsystem": "meson",
+            "sources": [{
+                "type": "dir",
+                "path": "."
+            }]
         }
+
     ]
 }
