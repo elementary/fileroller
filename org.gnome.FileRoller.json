@@ -126,6 +126,10 @@
                 {
                     "type": "patch",
                     "path": "fr-application-prefers-color-scheme.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "msandova:show-uri-on-window.patch"
                 }
             ]
         },
