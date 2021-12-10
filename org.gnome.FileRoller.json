@@ -107,6 +107,40 @@
             ]
         },
         {
+            "name": "lzo",
+            "buildsystem": "autotools",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "http://www.oberhumer.com/opensource/lzo/download/lzo-2.10.tar.gz",
+                    "sha1": "4924676a9bae5db58ef129dc1cebce3baa3c4b5d"
+                }
+            ]
+        },
+        {
+            "name": "squashfs-tools",
+            "buildsystem": "autotools",
+            "no-autogen": true,
+            "subdir": "squashfs-tools",
+            "make-args": [
+                "LZ4_SUPPORT=1",
+                "LZO_SUPPORT=1",
+                "XZ_SUPPORT=1",
+                "ZSTD_SUPPORT=1"
+            ],
+            "make-install-args": [
+                "INSTALL_DIR=/app/bin"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/plougher/squashfs-tools.git",
+                    "tag": "4.5",
+                    "commit": "0496d7c3de3e09da37ba492081c86159806ebb07"
+                }
+            ]
+        },
+        {
             "name": "file-roller",
             "buildsystem": "meson",
             "cleanup": [
@@ -134,6 +168,10 @@
                 {
                     "type": "patch",
                     "path": "fr-remove-open-with.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "fr-squashfs-tools-4.5.patch"
                 }
             ]
         },

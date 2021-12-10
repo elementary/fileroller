@@ -1,0 +1,16 @@
+--- a/src/fr-command-unsquashfs.c	2021-09-20 21:59:59.000000000 +0300
++++ b/src/fr-command-unsquashfs.c	2021-09-25 12:04:18.507582175 +0300
+@@ -58,13 +58,6 @@
+ 
+         g_return_if_fail (line != NULL);
+ 
+-        /* Skip header */
+-        if (!d->read_header) {
+-                if (line[0] == '\0')
+-                        d->read_header = TRUE;
+-                return;
+-        }
+-
+         fdata = file_data_new ();
+ 
+         fields = _g_str_split_line (line, 5);
