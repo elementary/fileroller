@@ -6,19 +6,18 @@
     "command": "file-roller",
     "rename-icon": "org.gnome.ArchiveManager",
     "copy-icon": true,
-    "finish-args": [
+    "finish-args" : [
         "--share=ipc",
         "--socket=fallback-x11",
         "--socket=wayland",
         "--filesystem=home",
-        "--filesystem=/tmp",
         "--metadata=X-DConf=migrate-path=/org/gnome/file-roller/",
         "--own-name=org.gnome.ArchiveManager1"
     ],
-    "cleanup": [
+    "cleanup" : [
         "/share/man"
     ],
-    "modules": [
+    "modules" : [
         {
             "name": "p7zip",
             "no-autogen": true,
@@ -103,25 +102,25 @@
                     "type": "archive",
                     "url": "https://github.com/ruda/rpm2cpio/archive/2017.tar.gz",
                     "sha256": "d266a4f49e65b5d05956502549ceb1d5671f927375ff71299069e6d92363297a"
+                },
+                {
+                    "type": "patch",
+                    "path": "rpm2cpio.patch"
                 }
             ]
         },
         {
-            "name": "file-roller",
-            "buildsystem": "meson",
+            "name" : "file-roller",
+            "buildsystem" : "meson",
             "cleanup": [
-                "org.gnome.FileRoller.ArchiveManager1.service",
-                "org.gnome.ArchiveManager.svg"
+                "org.gnome.FileRoller.ArchiveManager1.service"
             ],
-            "sources": [
+            "builddir" : true,
+            "sources" : [
                 {
-                    "type": "archive",
-                    "url": "https://download.gnome.org/sources/file-roller/3.40/file-roller-3.40.0.tar.xz",
-                    "sha256": "4a2886a3966200fb0a9cbba4e2b79f8dad9d26556498aacdaed71775590b3c0d",
-                    "x-checker-data": {
-                        "type": "gnome",
-                        "name": "file-roller"
-                    }
+                    "type": "git",
+                    "url": "https://gitlab.gnome.org/GNOME/file-roller.git",
+                    "commit": "f6f1798376cb9b64ee865d354f1c330ea3e56bcd"
                 },
                 {
                     "type": "patch",
