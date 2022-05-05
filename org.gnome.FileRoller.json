@@ -114,6 +114,7 @@
             "name": "file-roller",
             "buildsystem": "meson",
             "cleanup": [
+                "org.gnome.ArchiveManager.svg",
                 "org.gnome.FileRoller.ArchiveManager1.service"
             ],
             "builddir": true,
