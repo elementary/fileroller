@@ -142,10 +142,6 @@
                 },
                 {
                     "type": "patch",
-                    "path": "msandova:show-uri-on-window.patch"
-                },
-                {
-                    "type": "patch",
                     "path": "fr-remove-open-with.patch"
                 }
             ]
