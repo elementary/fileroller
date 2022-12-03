@@ -138,7 +138,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/file-roller.git",
-                    "tag": "43.0"
+                    "commit": "1a3cd7a8e0465011ac3c74252fae0ccc14d3aa15"
                 }
             ]
         },
