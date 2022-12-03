@@ -111,6 +111,22 @@
             ]
         },
         {
+            "name": "libportal",
+            "buildsystem": "meson",
+            "builddir": true,
+            "config-opts": [
+                "-Ddocs=false",
+                "-Dbackends=gtk3"
+            ],
+            "sources" : [
+                {
+                    "type": "git",
+                    "url": "https://github.com/flatpak/libportal.git",
+                    "branch": "main"
+                }
+            ]
+        },
+        {
             "name": "file-roller",
             "buildsystem": "meson",
             "cleanup": [
@@ -122,7 +138,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/file-roller.git",
-                    "commit": "f6f1798376cb9b64ee865d354f1c330ea3e56bcd"
+                    "tag": "43.0"
                 },
                 {
                     "type": "patch",
