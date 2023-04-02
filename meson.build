@@ -1,4 +1,4 @@
-project('org.gnome.ArchiveManager',
+project('org.gnome.FileRoller',
     meson_version: '>= 0.57.0'
 )
 
