@@ -21,8 +21,10 @@
             "name": "p7zip",
             "no-autogen": true,
             "make-args": [
-                "DEST_HOME=/app",
                 "7z"
+            ],
+            "make-install-args": [
+                "DEST_HOME=/app"
             ],
             "sources": [
                 {
