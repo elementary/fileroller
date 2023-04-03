@@ -23,6 +23,9 @@
             "make-args": [
                 "7z"
             ],
+            "make-install-args": [
+                "DEST_HOME=/app"
+            ],
             "sources": [
                 {
                     "type": "archive",
