@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.FileRoller",
     "runtime": "io.elementary.Platform",
-    "runtime-version": "7.2",
+    "runtime-version": "8.0",
     "sdk": "io.elementary.Sdk",
     "command": "file-roller",
     "finish-args": [
@@ -132,28 +132,6 @@
                 {
                     "type": "patch",
                     "path": "rpm2cpio.patch"
-                }
-            ]
-        },
-        {
-            "name": "libportal",
-            "buildsystem": "meson",
-            "builddir": true,
-            "config-opts": [
-                "-Ddocs=false",
-                "-Dbackends=gtk3"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/flatpak/libportal/releases/download/0.6/libportal-0.6.tar.xz",
-                    "sha256": "88a12c3ba71bc31acff7238c280de697d609cebc50830c3766776ec35abc6566",
-                    "x-checker-data": {
-                        "type": "json",
-                        "url": "https://api.github.com/repos/flatpak/libportal/releases/latest",
-                        "version-query": ".tag_name",
-                        "url-query": ".assets[] | select(.name==\"libportal-\" + $version + \".tar.xz\") | .browser_download_url"
-                    }
                 }
             ]
         },
