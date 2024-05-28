@@ -11,17 +11,17 @@ index 1f4010cb..0c355f3a 100644
  gtk_dep = dependency('gtk4', version: gtk4_version)
  libportal_dep = dependency('libportal', version: '>= 0.5', required: use_native_appchooser)
 diff --git a/src/fr-application.c b/src/fr-application.c
-index b7dea42f..d6155634 100644
+index b7dea42f..167ac15a 100644
 --- a/src/fr-application.c
 +++ b/src/fr-application.c
-@@ -470,6 +470,7 @@ fr_application_startup (GApplication *application)
+@@ -468,6 +468,7 @@ fr_application_register_archive_manager_service (FrApplication *self)
+ static void
+ fr_application_startup (GApplication *application)
  {
++	granite_init ();
  	G_APPLICATION_CLASS (fr_application_parent_class)->startup (application);
  
-+    granite_init ();
  	g_set_application_name (_("File Roller"));
- 	gtk_window_set_default_icon_name ("org.gnome.FileRoller");
- 	g_application_set_resource_base_path (application, "/org/gnome/FileRoller");
 diff --git a/src/fr-application.h b/src/fr-application.h
 index ac556720..2cb4f13c 100644
 --- a/src/fr-application.h
