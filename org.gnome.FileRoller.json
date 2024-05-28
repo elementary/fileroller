@@ -120,7 +120,7 @@
                 {
                     "type": "patch",
                     "path": "granite-init.patch"
-                },
+                }
             ]
         },
         {
