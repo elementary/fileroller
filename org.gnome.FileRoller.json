@@ -139,17 +139,18 @@
             "name": "file-roller",
             "buildsystem": "meson",
             "cleanup": [
-                "org.gnome.ArchiveManager1.service",
+                "org.gnome.FileRoller.ArchiveManager1.service",
                 "org.gnome.FileRoller.svg"
             ],
             "builddir": true,
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/file-roller/43/file-roller-43.0.tar.xz",
-                    "sha256": "298729fdbdb9da8132c0bbc60907517d65685b05618ae05167335e6484f573a1",
+                    "url": "https://download.gnome.org/sources/file-roller/44/file-roller-44.3.tar.xz",
+                    "sha256": "04c8a74625fec84267fdec40306afb4104bd332d85061e0d36d4ab0533adfa4a",
                     "x-checker-data": {
                         "type": "gnome",
+                        "is-important": true,
                         "name": "file-roller"
                     }
                 },
