@@ -120,6 +120,10 @@
                 {
                     "type": "patch",
                     "path": "granite-init.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "icon-extract.patch"
                 }
             ]
         },
