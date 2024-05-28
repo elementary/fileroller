@@ -116,7 +116,11 @@
                         "is-important": true,
                         "name": "file-roller"
                     }
-                }
+                },
+                {
+                    "type": "patch",
+                    "path": "granite-init.patch"
+                },
             ]
         },
         {

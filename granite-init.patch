@@ -1,0 +1,48 @@
+diff --git a/meson.build b/meson.build
+index 1f4010cb..0c355f3a 100644
+--- a/meson.build
++++ b/meson.build
+@@ -30,6 +30,7 @@ use_native_appchooser = get_option('use_native_appchooser')
+ libm_dep = c_comp.find_library('m')
+ thread_dep = dependency('threads')
+ glib_dep = dependency('glib-2.0', version: glib_version)
++granite_dep = dependency('granite-7', version: '>= 7.2.0')
+ gthread_dep = dependency('gthread-2.0')
+ gtk_dep = dependency('gtk4', version: gtk4_version)
+ libportal_dep = dependency('libportal', version: '>= 0.5', required: use_native_appchooser)
+diff --git a/src/fr-application.c b/src/fr-application.c
+index b7dea42f..d6155634 100644
+--- a/src/fr-application.c
++++ b/src/fr-application.c
+@@ -470,6 +470,7 @@ fr_application_startup (GApplication *application)
+ {
+ 	G_APPLICATION_CLASS (fr_application_parent_class)->startup (application);
+ 
++    granite_init ();
+ 	g_set_application_name (_("File Roller"));
+ 	gtk_window_set_default_icon_name ("org.gnome.FileRoller");
+ 	g_application_set_resource_base_path (application, "/org/gnome/FileRoller");
+diff --git a/src/fr-application.h b/src/fr-application.h
+index ac556720..2cb4f13c 100644
+--- a/src/fr-application.h
++++ b/src/fr-application.h
+@@ -25,6 +25,7 @@
+ 
+ #include <gtk/gtk.h>
+ #include <adwaita.h>
++#include <granite-7.h>
+ 
+ G_DECLARE_FINAL_TYPE (FrApplication, fr_application, FR, APPLICATION, AdwApplication)
+ 
+diff --git a/src/meson.build b/src/meson.build
+index 5d9e1c73..fecefdb1 100644
+--- a/src/meson.build
++++ b/src/meson.build
+@@ -137,6 +137,7 @@ fr_exe = executable(
+     libm_dep,
+     thread_dep,
+     glib_dep,
++    granite_dep,
+     gthread_dep,
+     gtk_dep,
+     libadwaita_dep,
