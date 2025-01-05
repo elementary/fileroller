@@ -8,6 +8,7 @@
         "--share=ipc",
         "--socket=fallback-x11",
         "--socket=wayland",
+        "--device=dri",
         "--filesystem=home",
         "--filesystem=/tmp",
         "--metadata=X-DConf=migrate-path=/org/gnome/file-roller/",
