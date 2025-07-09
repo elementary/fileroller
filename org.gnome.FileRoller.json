@@ -53,8 +53,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.rarlab.com/rar/unrarsrc-6.2.12.tar.gz",
-                    "sha256": "a008b5f949bca9bb4ffa1bebbfc8b3c14b89df10a10354809b845232d5f582e5",
+                    "url": "https://www.rarlab.com/rar/unrarsrc-7.1.8.tar.gz",
+                    "sha256": "9ec7765a948140758af12ed29e3e47db425df79a9c5cbb71b28769b256a7a014",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 13306,
@@ -70,8 +70,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/facebook/zstd/releases/download/v1.5.6/zstd-1.5.6.tar.gz",
-                    "sha256": "8c29e06cf42aacc1eafc4077ae2ec6c6fcb96a626157e0593d5e82a34fd403c1",
+                    "url": "https://github.com/facebook/zstd/releases/download/v1.5.7/zstd-1.5.7.tar.gz",
+                    "sha256": "eb33e51f49a15e023950cd7825ca74a4a2b43db8354825ac24fc1b7ee09e6fa3",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/facebook/zstd/releases/latest",
@@ -110,8 +110,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/file-roller/44/file-roller-44.3.tar.xz",
-                    "sha256": "04c8a74625fec84267fdec40306afb4104bd332d85061e0d36d4ab0533adfa4a",
+                    "url": "https://download.gnome.org/sources/file-roller/44/file-roller-44.5.tar.xz",
+                    "sha256": "dfaf4bb989c0b8986be8bdae9fffeab8d0f30669ae3a627e8c3df94f23888339",
                     "x-checker-data": {
                         "type": "gnome",
                         "is-important": true,
