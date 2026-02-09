@@ -53,8 +53,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.rarlab.com/rar/unrarsrc-7.2.3.tar.gz",
-                    "sha256": "3995af0aa32b1505a566da053725551a1f0698dc42b2fdf7ba7d65db0d004e33",
+                    "url": "https://www.rarlab.com/rar/unrarsrc-7.2.4.tar.gz",
+                    "sha256": "b02e571a33af7711cd803080500370dc1d28eea82b2032480819d27462ad8b31",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 13306,
