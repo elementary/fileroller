@@ -8,7 +8,7 @@ Homepage: https://github.com/elementary/fileroller
 
 Package: org.gnome.fileroller
 Architecture: all
-Depends: ${misc:Depends}, ${shlibs:Depends}, flatpak
+Depends: ${misc:Depends}, flatpak
 Breaks: file-roller, io.elementary.contractor.file-roller
 Replaces: file-roller, io.elementary.contractor.file-roller
 Description: File Roller flatpak'd for elementary OS
